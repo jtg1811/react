@@ -4,7 +4,11 @@ import './App.css'
 function App() {
   const [counter, setCounter] = useState(0)
   const addvalue = () => {
-    setCounter(counter+1)
+    // directly increase in +4
+    setCounter(counter=>counter+1)
+    setCounter(counter=>counter+1)
+    setCounter(counter=>counter+1)
+    setCounter(counter=>counter+1)
   }
   const removeValue = () => {
     if(counter>=1){
