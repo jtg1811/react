@@ -1,10 +1,9 @@
-import './App.css'
 import { useState } from 'react'
+import './App.css'
+
 function App() {
-
-  let [counter,setCounter] = useState(3)
-
-  const addValue = () => {
+  const [counter, setCounter] = useState(0)
+  const addvalue = () => {
     setCounter(counter+1)
   }
   const removeValue = () => {
@@ -14,11 +13,10 @@ function App() {
   }
   return (
     <>
-    <button onClick={addValue}>inc count</button><br/>
-    <label>counter value after inc : {counter} </label><br/>
-    <button onClick={removeValue}>dec count</button><br/>
-    <label>counter value after dec : {counter} </label><br/>
-
+    <button onClick={addvalue}>add value</button><br/>
+    <label>count value after inc: {counter}</label><br/>
+    <button onClick={removeValue}>remove value</button><br/>
+    <label>count value after dec: {counter}</label>
     </>
   )
 }
