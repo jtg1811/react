@@ -1,6 +1,12 @@
+import Car from "./car"
+const username = "jeet gandhi"
 function App() {
   return (
-    <h1>react with vite</h1>
+    <>
+      <Car/>
+      <p>username : {username}</p>
+      <h1>react with vite</h1>
+    </>
   )
 }
 
